@@ -1,8 +1,8 @@
 #----------------------------------------------------------------------
 #   Sanjeet Jain: sahjain
-#   Makefile for asgn2 (from P. Tantalo and W. Mackey UCSC with
+#   Makefile for oc (from P. Tantalo and W. Mackey UCSC with
 #		modifications)
-#   Creates an executable file oc
+#   Creates an executable file oc that compiles and interprets *.oc
 #----------------------------------------------------------------------
 
 DEPSFILE  = Makefile.deps
@@ -101,8 +101,3 @@ again :
 ifeq "${NEEDINCL}" ""
 include ${DEPSFILE}
 endif
-
-
-submit:
-	submit cmps104a-wm.f18 asg1 README auxlib.h auxlib.cpp \
-	string_set.h string_set.cpp main.cpp Makefile Makefile.deps
